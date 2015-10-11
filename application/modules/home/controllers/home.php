@@ -58,23 +58,27 @@ if( ! $this->upload->do_upload("file")){
     //echo the errors
     echo $this->upload->display_errors();
 }
+else
+{
+    $file_name = $this->upload->file_name;
 
+     $this->email->subject('Answer to your query');
+                $this->email->message($postData['ms'].'.Follow the link for attachment      '.'http://localhost/hmvc-legistify/legistify/legistify/application/modules/home/views/file_upload/'.$file_name);    
+
+                $this->email->send();
+                
+                echo "Mail Has Been Sent Successfully....!!!!"; 
+
+
+}
 
 //If the upload success
-$file_name = $this->upload->file_name;
-echo "Your message has been Sent! ";
-
 
 //Save the file name into the db
 
 }
 
-                $this->email->subject('Answer to your query');
-                $this->email->message($postData['ms'].'.Follow the link for attachment      '.'http://localhost/hmvc-legistify/legistify/legistify/application/modules/home/views/file_upload/'.$file_name);    
-
-                $this->email->send();
-                $id= $postData['hiid'];
-                $this->main_model->deleteQuery('queries', array('id' => $id));
+               
 
                
                 
