@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 11, 2015 at 10:52 AM
+-- Generation Time: Oct 11, 2015 at 12:37 PM
 -- Server version: 5.6.25-0ubuntu0.15.04.1
 -- PHP Version: 5.6.4-4ubuntu6.3
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `queries` (
 --
 
 INSERT INTO `queries` (`id`, `name`, `date`, `time`, `message`, `email`) VALUES
-(1, 'Shubham Mittal', '22/10/1994', '22:10', 'This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page', 'shubham.mittal.kv1@gmail.com'),
+(1, 'SHUBHAM MITTAL', '11/10/1994', '12:36', 'This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page', 'shubham.mittal.kv1@gmail.com'),
 (2, 'Surbhi Mittal', '24/12/1996', '16:20', 'This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page', 'asam41394@gmail.com'),
 (3, 'chitrangana sharma', '12/04/1997', '15:20', 'This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page', 'chitrangana.sharma4@gmail.com'),
 (4, 'Surbhi Shekhawat', '12/03/2004', '16:20', 'This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page This is the query which an user post on this page', 'surabhi.shekhawat94@gmail.com'),

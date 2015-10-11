@@ -66,7 +66,8 @@ else
                 $this->email->message($postData['ms'].'.Follow the link for attachment      '.'http://localhost/hmvc-legistify/legistify/legistify/application/modules/home/views/file_upload/'.$file_name);    
 
                 $this->email->send();
-                
+                $id=$postData['hiid'];
+                $this->main_model->deleteQuery('queries', array('id' => $id)); 
                 echo "Mail Has Been Sent Successfully....!!!!"; 
 
 
